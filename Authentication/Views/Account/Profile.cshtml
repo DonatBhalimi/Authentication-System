@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Profile";
+}
+<h2 class="mb-3">My Profile</h2>
+<div id="profileCard" class="card card-body shadow-sm col-md-6">
+    <p>Loading data...</p>
+</div>
+
+@section Scripts {
+    <script>
+        (async () => {
+            const res = await fetch("/api/account/usr", {
+                method: "GET",
+                credentials: "include"
+            });
+
+            const card = document.getElementById("profileCard");
+
+            if (!res.ok) {
+                card.innerHTML = `
+                    <div class="alert alert-warning">
+                        You are not logged in, or your session has expired.
+                    </div>`;
+                return;
+            }
+
+            const data = await res.json();
+            card.innerHTML = `
+                <div class="mb-2"><strong>Username:</strong> ${data.userName}</div>
+                <div class="mb-2"><strong>Email:</strong> ${data.email}</div>
+                <div class="mb-2"><strong>Account Created:</strong> ${new Date(data.createdTime).toLocaleString()}</div>
+                <a href="/Account/ChangePassword" class="btn btn-outline-primary mt-3">
+                    Change Password
+                </a>`;
+        })();
+    </script>
+}

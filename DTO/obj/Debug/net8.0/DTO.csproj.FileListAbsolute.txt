@@ -1,0 +1,11 @@
+C:\Users\Acer\source\repos\Authentication\DTO\bin\Debug\net8.0\DTO.deps.json
+C:\Users\Acer\source\repos\Authentication\DTO\bin\Debug\net8.0\DTO.dll
+C:\Users\Acer\source\repos\Authentication\DTO\bin\Debug\net8.0\DTO.pdb
+C:\Users\Acer\source\repos\Authentication\DTO\obj\Debug\net8.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\source\repos\Authentication\DTO\obj\Debug\net8.0\DTO.AssemblyInfoInputs.cache
+C:\Users\Acer\source\repos\Authentication\DTO\obj\Debug\net8.0\DTO.AssemblyInfo.cs
+C:\Users\Acer\source\repos\Authentication\DTO\obj\Debug\net8.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\Authentication\DTO\obj\Debug\net8.0\DTO.dll
+C:\Users\Acer\source\repos\Authentication\DTO\obj\Debug\net8.0\refint\DTO.dll
+C:\Users\Acer\source\repos\Authentication\DTO\obj\Debug\net8.0\DTO.pdb
+C:\Users\Acer\source\repos\Authentication\DTO\obj\Debug\net8.0\ref\DTO.dll

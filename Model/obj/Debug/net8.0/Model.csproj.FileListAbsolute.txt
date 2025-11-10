@@ -1,0 +1,11 @@
+C:\Users\Acer\source\repos\Authentication\Model\bin\Debug\net8.0\Model.deps.json
+C:\Users\Acer\source\repos\Authentication\Model\bin\Debug\net8.0\Model.dll
+C:\Users\Acer\source\repos\Authentication\Model\bin\Debug\net8.0\Model.pdb
+C:\Users\Acer\source\repos\Authentication\Model\obj\Debug\net8.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\source\repos\Authentication\Model\obj\Debug\net8.0\Model.AssemblyInfoInputs.cache
+C:\Users\Acer\source\repos\Authentication\Model\obj\Debug\net8.0\Model.AssemblyInfo.cs
+C:\Users\Acer\source\repos\Authentication\Model\obj\Debug\net8.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\Authentication\Model\obj\Debug\net8.0\Model.dll
+C:\Users\Acer\source\repos\Authentication\Model\obj\Debug\net8.0\refint\Model.dll
+C:\Users\Acer\source\repos\Authentication\Model\obj\Debug\net8.0\Model.pdb
+C:\Users\Acer\source\repos\Authentication\Model\obj\Debug\net8.0\ref\Model.dll
