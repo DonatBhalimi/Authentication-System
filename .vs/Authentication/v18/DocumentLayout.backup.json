@@ -1,0 +1,563 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Acer\\source\\repos\\Authentication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251124203846_AddIsTwoFactorEnabledToUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20251124203846_AddIsTwoFactorEnabledToUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3031F90C-EA16-4FED-885E-AF493CD7FC17}|Model\\Model.csproj|c:\\users\\acer\\source\\repos\\authentication\\model\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3031F90C-EA16-4FED-885E-AF493CD7FC17}|Model\\Model.csproj|solutionrelative:model\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3031F90C-EA16-4FED-885E-AF493CD7FC17}|Model\\Model.csproj|c:\\users\\acer\\source\\repos\\authentication\\model\\models\\emailverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3031F90C-EA16-4FED-885E-AF493CD7FC17}|Model\\Model.csproj|solutionrelative:model\\models\\emailverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3031F90C-EA16-4FED-885E-AF493CD7FC17}|Model\\Model.csproj|c:\\users\\acer\\source\\repos\\authentication\\model\\models\\twofactorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3031F90C-EA16-4FED-885E-AF493CD7FC17}|Model\\Model.csproj|solutionrelative:model\\models\\twofactorcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4547F620-79BC-4590-AFF4-8B80E8B24A19}|Services\\Services.csproj|c:\\users\\acer\\source\\repos\\authentication\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4547F620-79BC-4590-AFF4-8B80E8B24A19}|Services\\Services.csproj|solutionrelative:services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|c:\\users\\acer\\source\\repos\\authentication\\authentication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|solutionrelative:authentication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4547F620-79BC-4590-AFF4-8B80E8B24A19}|Services\\Services.csproj|c:\\users\\acer\\source\\repos\\authentication\\services\\userauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4547F620-79BC-4590-AFF4-8B80E8B24A19}|Services\\Services.csproj|solutionrelative:services\\userauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4547F620-79BC-4590-AFF4-8B80E8B24A19}|Services\\Services.csproj|c:\\users\\acer\\source\\repos\\authentication\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4547F620-79BC-4590-AFF4-8B80E8B24A19}|Services\\Services.csproj|solutionrelative:services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|c:\\users\\acer\\source\\repos\\authentication\\authentication\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|solutionrelative:authentication\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|c:\\users\\acer\\source\\repos\\authentication\\authentication\\controllers\\accountapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|solutionrelative:authentication\\controllers\\accountapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{101F6310-CE9C-4433-AD80-D7CCFD94A651}|Data\\Data.csproj|c:\\users\\acer\\source\\repos\\authentication\\data\\migrations\\20251124194925_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{101F6310-CE9C-4433-AD80-D7CCFD94A651}|Data\\Data.csproj|solutionrelative:data\\migrations\\20251124194925_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|c:\\users\\acer\\source\\repos\\authentication\\authentication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|solutionrelative:authentication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251124194730_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20251124194730_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|c:\\users\\acer\\source\\repos\\authentication\\authentication\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|solutionrelative:authentication\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|c:\\users\\acer\\source\\repos\\authentication\\authentication\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|solutionrelative:authentication\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|c:\\users\\acer\\source\\repos\\authentication\\authentication\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|solutionrelative:authentication\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{101F6310-CE9C-4433-AD80-D7CCFD94A651}|Data\\Data.csproj|c:\\users\\acer\\source\\repos\\authentication\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{101F6310-CE9C-4433-AD80-D7CCFD94A651}|Data\\Data.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251111020535_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20251111020535_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2B24F5B-E45B-44BB-8170-ADAA70F749F4}|DTO\\DTO.csproj|c:\\users\\acer\\source\\repos\\authentication\\dto\\dto\\verifytwofactorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B24F5B-E45B-44BB-8170-ADAA70F749F4}|DTO\\DTO.csproj|solutionrelative:dto\\dto\\verifytwofactorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2B24F5B-E45B-44BB-8170-ADAA70F749F4}|DTO\\DTO.csproj|c:\\users\\acer\\source\\repos\\authentication\\dto\\dto\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B24F5B-E45B-44BB-8170-ADAA70F749F4}|DTO\\DTO.csproj|solutionrelative:dto\\dto\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2B24F5B-E45B-44BB-8170-ADAA70F749F4}|DTO\\DTO.csproj|c:\\users\\acer\\source\\repos\\authentication\\dto\\dto\\verifyemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B24F5B-E45B-44BB-8170-ADAA70F749F4}|DTO\\DTO.csproj|solutionrelative:dto\\dto\\verifyemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|c:\\users\\acer\\source\\repos\\authentication\\authentication\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|solutionrelative:authentication\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|c:\\users\\acer\\source\\repos\\authentication\\authentication\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|solutionrelative:authentication\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2B24F5B-E45B-44BB-8170-ADAA70F749F4}|DTO\\DTO.csproj|c:\\users\\acer\\source\\repos\\authentication\\dto\\dto\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B24F5B-E45B-44BB-8170-ADAA70F749F4}|DTO\\DTO.csproj|solutionrelative:dto\\dto\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|c:\\users\\acer\\source\\repos\\authentication\\authentication\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|solutionrelative:authentication\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251110171455_InitSqlServer1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20251110171455_InitSqlServer1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251110170656_InitSQLServer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20251110170656_InitSQLServer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|c:\\users\\acer\\source\\repos\\authentication\\authentication\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF53F82E-7887-41EC-8D41-1C56A9A2BF95}|Authentication\\Authentication.csproj|solutionrelative:authentication\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2B24F5B-E45B-44BB-8170-ADAA70F749F4}|DTO\\DTO.csproj|c:\\users\\acer\\source\\repos\\authentication\\dto\\dto\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B24F5B-E45B-44BB-8170-ADAA70F749F4}|DTO\\DTO.csproj|solutionrelative:dto\\dto\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2B24F5B-E45B-44BB-8170-ADAA70F749F4}|DTO\\DTO.csproj|c:\\users\\acer\\source\\repos\\authentication\\dto\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B24F5B-E45B-44BB-8170-ADAA70F749F4}|DTO\\DTO.csproj|solutionrelative:dto\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{101F6310-CE9C-4433-AD80-D7CCFD94A651}|Data\\Data.csproj|c:\\users\\acer\\source\\repos\\authentication\\data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{101F6310-CE9C-4433-AD80-D7CCFD94A651}|Data\\Data.csproj|solutionrelative:data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3031F90C-EA16-4FED-885E-AF493CD7FC17}|Model\\Model.csproj|c:\\users\\acer\\source\\repos\\authentication\\model\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3031F90C-EA16-4FED-885E-AF493CD7FC17}|Model\\Model.csproj|solutionrelative:model\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20251124203846_AddIsTwoFactorEnabledToUser.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251124203846_AddIsTwoFactorEnabledToUser.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20251124203846_AddIsTwoFactorEnabledToUser.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251124203846_AddIsTwoFactorEnabledToUser.cs",
+              "RelativeToolTip": "Data\\Migrations\\20251124203846_AddIsTwoFactorEnabledToUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T20:38:46.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Model\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "Model\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Model\\Models\\AppUser.cs",
+              "RelativeToolTip": "Model\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:08:40.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "Services\\AuthenticationService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:23:19.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountAPIController.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Controllers\\AccountAPIController.cs",
+              "RelativeDocumentMoniker": "Authentication\\Controllers\\AccountAPIController.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Controllers\\AccountAPIController.cs",
+              "RelativeToolTip": "Authentication\\Controllers\\AccountAPIController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:37:44.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Authentication\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Authentication\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T16:27:13.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Services\\EmailSender.cs",
+              "RelativeDocumentMoniker": "Services\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Services\\EmailSender.cs",
+              "RelativeToolTip": "Services\\EmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T02:14:36.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Services\\UserAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\UserAuthService.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Services\\UserAuthService.cs",
+              "RelativeToolTip": "Services\\UserAuthService.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAAwNAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T01:50:38.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Program.cs",
+              "RelativeDocumentMoniker": "Authentication\\Program.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Program.cs",
+              "RelativeToolTip": "Authentication\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:57:27.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmailVerification.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Model\\Models\\EmailVerification.cs",
+              "RelativeDocumentMoniker": "Model\\Models\\EmailVerification.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Model\\Models\\EmailVerification.cs",
+              "RelativeToolTip": "Model\\Models\\EmailVerification.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T01:30:40.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TwoFactorCode.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Model\\Models\\TwoFactorCode.cs",
+              "RelativeDocumentMoniker": "Model\\Models\\TwoFactorCode.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Model\\Models\\TwoFactorCode.cs",
+              "RelativeToolTip": "Model\\Models\\TwoFactorCode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T01:31:31.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\appsettings.json",
+              "RelativeDocumentMoniker": "Authentication\\appsettings.json",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\appsettings.json",
+              "RelativeToolTip": "Authentication\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-04T08:07:33.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Authentication\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Authentication\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAcwHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T16:10:14.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "VerifyEmailRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\DTO\\DTO\\VerifyEmailRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\DTO\\VerifyEmailRequest.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\DTO\\DTO\\VerifyEmailRequest.cs",
+              "RelativeToolTip": "DTO\\DTO\\VerifyEmailRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T01:33:32.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Authentication\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\WeatherForecast.cs",
+              "RelativeToolTip": "Authentication\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T16:23:07.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20251124194925_initial.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251124194925_initial.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20251124194925_initial.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251124194925_initial.cs",
+              "RelativeToolTip": "Data\\Migrations\\20251124194925_initial.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T19:49:25.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20251124194730_initial.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251124194730_initial.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20251124194730_initial.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251124194730_initial.cs",
+              "RelativeToolTip": "Data\\Migrations\\20251124194730_initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T19:47:30.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "VerifyTwoFactorRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\DTO\\DTO\\VerifyTwoFactorRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\DTO\\VerifyTwoFactorRequest.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\DTO\\DTO\\VerifyTwoFactorRequest.cs",
+              "RelativeToolTip": "DTO\\DTO\\VerifyTwoFactorRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T01:34:09.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Authentication\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Authentication\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAcwHIAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T16:10:36.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20251111020535_initial.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251111020535_initial.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20251111020535_initial.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251111020535_initial.cs",
+              "RelativeToolTip": "Data\\Migrations\\20251111020535_initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T02:05:35.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAmwDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:16:58.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Authentication\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "Authentication\\Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T16:10:54.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\DTO\\DTO\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\DTO\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\DTO\\DTO\\LoginRequest.cs",
+              "RelativeToolTip": "DTO\\DTO\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:20:21.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ChangePasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\DTO\\DTO\\ChangePasswordRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\DTO\\ChangePasswordRequest.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\DTO\\DTO\\ChangePasswordRequest.cs",
+              "RelativeToolTip": "DTO\\DTO\\ChangePasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:20:08.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "Authentication\\Views\\Account\\ChangePassword.cshtml",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeToolTip": "Authentication\\Views\\Account\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T16:11:13.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Authentication\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Authentication\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T17:19:37.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20251110170656_InitSQLServer.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251110170656_InitSQLServer.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20251110170656_InitSQLServer.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251110170656_InitSQLServer.cs",
+              "RelativeToolTip": "Data\\Migrations\\20251110170656_InitSQLServer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T17:06:56.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20251110171455_InitSqlServer1.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251110171455_InitSqlServer1.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20251110171455_InitSqlServer1.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Migrations\\20251110171455_InitSqlServer1.cs",
+              "RelativeToolTip": "Data\\Migrations\\20251110171455_InitSqlServer1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T17:14:56.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Authentication\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Authentication\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Authentication\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T16:55:18.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\DTO\\DTO\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\DTO\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\DTO\\DTO\\RegisterRequest.cs",
+              "RelativeToolTip": "DTO\\DTO\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:20:20.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Class1.cs",
+              "RelativeDocumentMoniker": "Data\\Class1.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Data\\Class1.cs",
+              "RelativeToolTip": "Data\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:15:27.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\DTO\\Class1.cs",
+              "RelativeDocumentMoniker": "DTO\\Class1.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\DTO\\Class1.cs",
+              "RelativeToolTip": "DTO\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:19:50.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\Authentication\\Model\\Class1.cs",
+              "RelativeDocumentMoniker": "Model\\Class1.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\Authentication\\Model\\Class1.cs",
+              "RelativeToolTip": "Model\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T08:06:58.997Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

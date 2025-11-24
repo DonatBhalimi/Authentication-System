@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "AvHP0Y02zQwAqTEywABYG4dnGQn32paOX+uZ7MeL0GQ=",
-  "Source": "Authentication",
-  "BasePath": "_content/Authentication",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"X5LKq7pxfn0sgzcIQRmU7xvpo/t4o8GGw5ygHnuZlNc=","Source":"Authentication","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

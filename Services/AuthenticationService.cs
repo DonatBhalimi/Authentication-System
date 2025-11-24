@@ -1,118 +1,95 @@
 ﻿using Data;
-using Microsoft.AspNet.Identity;
+using DTO;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Model.Models;
+using Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
 
-
-namespace Services
+namespace Authentication.Controllers
 {
-    public class AuthenticationService
+    [ApiController]
+    [Route("api/internal/account")]
+    public class InternalAccountAPIController : ControllerBase
     {
+        private readonly UserAuthService _auth;
         private readonly AppDbContext _db;
-        private readonly PasswordHasher<AppUser> _hasher = new();
 
-        public AuthenticationService(AppDbContext db) => _db = db;
-
-        public async Task<(bool ok, string error)> RegisterAsync(string userName, string email, string password)
+        public InternalAccountAPIController(UserAuthService auth, AppDbContext db)
         {
-            if (!IsValidUserName(userName))
-            {
-                return (false, "Bad username.");
-            }
-            if (!IsValidEmail(email))
-            {
-                return (false, "Bad email.");
-            }
-            if (!IsValidPassword(password))
-            {
-                return (false, "Weak password.");
-            }
-
-            var exists = await _db.Users.AnyAsync(u => u.UserName == userName || u.Email == email);
-            if (exists)
-            {
-                return (false, "Username or email already exists.");
-            }
-
-            var user = new AppUser { UserName = userName.Trim(), Email = email.Trim() };
-            user.PasswordHash = _hasher.HashPassword(user, password);
-
-            _db.Users.Add(user);
-            await _db.SaveChangesAsync();
-            return (true, "");
+            _auth = auth;
+            _db = db;
         }
 
-        public async Task<(AppUser? user, string error)> ValidateLoginAsync(string userOrEmail, string password)
+        [AllowAnonymous]
+        [HttpPost("register")]
+        public async Task<IActionResult> Register(RegisterRequest dto)
         {
-            var user = await _db.Users
-                .FirstOrDefaultAsync(u => u.UserName == userOrEmail || u.Email == userOrEmail);
+            var (ok, error) = await _auth.RegisterAsync(dto.UserName, dto.Email, dto.Password);
+            if (!ok) return BadRequest(error);
+            return Ok("Registration step 1 completed. Verification code sent to email.");
+        }
 
-            if (user is null)
-            {
-                return (null, "Invalid credentials.");
-            }
+        [AllowAnonymous]
+        [HttpPost("verify-email")]
+        public async Task<IActionResult> VerifyEmail(VerifyEmailRequest dto)
+        {
+            var (ok, error) = await _auth.ConfirmEmailAsync(dto.Email, dto.Code);
+            if (!ok) return BadRequest(error);
+            return Ok("Email successfully verified. You can now log in.");
+        }
 
-            var res = _hasher.VerifyHashedPassword(user, user.PasswordHash, password);
-            return res == Microsoft.AspNetCore.Identity.PasswordVerificationResult.Failed ? (null, "Invalid credentials.") : (user, "");
+        [AllowAnonymous]
+        [HttpPost("login")]
+        public async Task<IActionResult> StartLogin(LoginRequest dto)
+        {
+            var (twoFactorId, error) = await _auth.StartLoginAsync(dto.UsernameOREmail, dto.Password);
+            if (twoFactorId is null) return Unauthorized();
+            return Ok(new { twoFactorId, message = "2FA code sent. Please verify using /api/account/verify-2fa." });
+        }
+
+        [AllowAnonymous]
+        [HttpPost("verify-2fa")]
+        public async Task<IActionResult> VerifyTwoFactor(VerifyTwoFactorRequest dto)
+        {
+            var (principal, error) = await _auth.CompleteTwoFactorLoginAsync(dto.TwoFactorId, dto.Code);
+            if (principal == null) return Unauthorized();
+            await HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                principal,
+                new AuthenticationProperties { IsPersistent = dto.RememberMe });
+            return Ok("Login successful.");
         }
 
 
-        public async Task<(bool ok, string error)> ChangePasswordAsync(Guid userId, string current, string next)
-
+        [Authorize]
+        [HttpGet("usr")]
+        public async Task<IActionResult> usr()
         {
-            var user = await _db.Users.FindAsync(userId);
-            if (user is null)
-            {
-                return (false, "User missing.");
-            }
-
-            var verify = _hasher.VerifyHashedPassword(user, user.PasswordHash, current);
-            if (verify == Microsoft.AspNetCore.Identity.PasswordVerificationResult.Failed)
-            {
-                return (false, "Password is wrong.");
-            }
-
-            if (!IsValidPassword(next))
-            {
-                return (false, "New password too weak.");
-            }
-
-            user.PasswordHash = _hasher.HashPassword(user, next);
-            await _db.SaveChangesAsync();
-            return (true, "");
+            var id = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+            var usr = await _db.Users.AsNoTracking().FirstAsync(u => u.Id == id);
+            return Ok(new { usr.UserName, usr.Email, usr.CreatedTime });
         }
-        public static ClaimsPrincipal CreatePrincipal(AppUser user)
+
+        [Authorize]
+        [HttpPost("change-password")]
+        public async Task<IActionResult> ChangePassword(ChangePasswordRequest dto)
         {
-            var claims = new[]
-            {
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Name, user.UserName),
-                new Claim(ClaimTypes.Email, user.Email),
-            };
-            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-            return new ClaimsPrincipal(identity);
+            var id = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+            var (ok, error) = await _auth.ChangePasswordAsync(id, dto.CurrentPassword, dto.NewPassword);
+            return ok ? Ok("Password changed.") : BadRequest(error);
         }
-        private static bool IsValidUserName(string s) =>
-            !string.IsNullOrWhiteSpace(s) && s.Length is >= 3 and <= 50;
 
-        private static bool IsValidEmail(string s) =>
-            !string.IsNullOrWhiteSpace(s) && s.Contains("@") && s.Length <= 100;
-
-        private static bool IsValidPassword(string s)
+        [Authorize]
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout()
         {
-            if (string.IsNullOrWhiteSpace(s) || s.Length < 8) return false;
-            var hasUpper = s.Any(char.IsUpper);
-            var hasLower = s.Any(char.IsLower);
-            var hasDigit = s.Any(char.IsDigit);
-            return hasUpper && hasLower && hasDigit;
+            await HttpContext.SignOutAsync();
+            return Ok("Logged out.");
         }
     }
 }

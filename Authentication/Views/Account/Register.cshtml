@@ -1,58 +1,123 @@
 ﻿@{
-    ViewData["Title"] = "Registration";
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2 class="mb-3">User Registration</h2>
-<p class="text-muted">
-    Enter a username, e-mail, and a strong password (min. 8 characters, uppercase/lowercase letters, and at least one number).
-</p>
 
-<div class="col-md-6">
-    <form id="registerForm" class="card card-body shadow-sm">
-        <div class="mb-3">
-            <label class="form-label">Username</label>
-            <input type="text" class="form-control" id="username" required>
+<div class="d-flex justify-content-center align-items-center mt-5">
+    <div class="card shadow-sm" style="min-width: 380px; max-width: 420px; width: 100%;">
+        <div class="card-header text-center">
+            <h3 class="mb-0">Create account</h3>
         </div>
-        <div class="mb-3">
-            <label class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" required>
+
+        <div class="card-body" id="register-step1">
+            <form id="registerForm">
+                <div class="mb-3">
+                    <label for="UserName" class="form-label">Username</label>
+                    <input id="UserName" name="UserName" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="Email" class="form-label">Email</label>
+                    <input id="Email" name="Email" type="email" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="Password" class="form-label">Password</label>
+                    <input id="Password" name="Password" type="password" class="form-control" required />
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Register</button>
+            </form>
+
+            <div id="registerError" class="text-danger mt-3"></div>
         </div>
-        <div class="mb-3">
-            <label class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" required>
-            <div class="form-text">
-                Combination of uppercase, lowercase letters, and numbers.
-            </div>
+
+        <div class="card-body" id="register-step2" style="display:none;">
+            <p class="mb-3">We have sent a verification code to your email. Enter it below to activate your account.</p>
+
+            <form id="verifyEmailForm">
+                <div class="mb-3">
+                    <label for="VerifyEmail" class="form-label">Email</label>
+                    <input id="VerifyEmail" name="Email" type="email" class="form-control" readonly />
+                </div>
+
+                <div class="mb-3">
+                    <label for="VerifyCode" class="form-label">Verification code</label>
+                    <input id="VerifyCode" name="Code" class="form-control" required />
+                </div>
+
+                <button type="submit" class="btn btn-success w-100">Verify email</button>
+            </form>
+
+            <div id="verifyError" class="text-danger mt-3"></div>
+            <div id="verifySuccess" class="text-success mt-3"></div>
         </div>
-        <button class="btn btn-primary w-100" type="submit">Register</button>
-        <div id="regMessage" class="mt-3"></div>
-    </form>
+
+        <div class="card-footer text-center">
+            <span>Already have an account?</span>
+            <a asp-controller="Account" asp-action="Login">Log in</a>
+        </div>
+    </div>
 </div>
 
 @section Scripts {
     <script>
-        document.getElementById("registerForm").addEventListener("submit", async (e) => {
+        const rStep1 = document.getElementById("register-step1");
+        const rStep2 = document.getElementById("register-step2");
+        const registerForm = document.getElementById("registerForm");
+        const verifyForm = document.getElementById("verifyEmailForm");
+        const registerError = document.getElementById("registerError");
+        const verifyError = document.getElementById("verifyError");
+        const verifySuccess = document.getElementById("verifySuccess");
+        const verifyEmailInput = document.getElementById("VerifyEmail");
+
+        registerForm.addEventListener("submit", async function (e) {
             e.preventDefault();
-            const body = {
-                userName: document.getElementById("username").value,
-                email: document.getElementById("email").value,
-                password: document.getElementById("password").value
+
+            const payload = {
+                userName: document.getElementById("UserName").value,
+                email: document.getElementById("Email").value,
+                password: document.getElementById("Password").value
             };
 
             const res = await fetch("/api/account/register", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(body)
+                body: JSON.stringify(payload)
             });
 
-            const msgEl = document.getElementById("regMessage");
             if (res.ok) {
-                msgEl.className = "alert alert-success";
-                msgEl.textContent = "Registration successful. Please log in.";
-                setTimeout(() => window.location.href = "/Account/Login", 1500);
+                registerError.textContent = "";
+                rStep1.style.display = "none";
+                rStep2.style.display = "block";
+                verifyEmailInput.value = payload.email;
             } else {
-                const err = await res.text();
-                msgEl.className = "alert alert-danger";
-                msgEl.textContent = err || "Error during registration.";
+                const text = await res.text();
+                registerError.textContent = text || "Registration failed.";
+            }
+        });
+
+        verifyForm.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const payload = {
+                email: verifyEmailInput.value,
+                code: document.getElementById("VerifyCode").value
+            };
+
+            const res = await fetch("/api/account/verify-email", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+            });
+
+            if (res.ok) {
+                verifyError.textContent = "";
+                verifySuccess.textContent = "Email verified. You can now log in.";
+            } else {
+                const text = await res.text();
+                verifySuccess.textContent = "";
+                verifyError.textContent = text || "Verification failed.";
             }
         });
     </script>

@@ -15,3 +15,6 @@ C:\Users\Acer\source\repos\Authentication\Services\obj\Debug\net8.0\Services.dll
 C:\Users\Acer\source\repos\Authentication\Services\obj\Debug\net8.0\refint\Services.dll
 C:\Users\Acer\source\repos\Authentication\Services\obj\Debug\net8.0\Services.pdb
 C:\Users\Acer\source\repos\Authentication\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\Acer\source\repos\Authentication\Services\obj\Debug\net8.0\Services.sourcelink.json
+C:\Users\Acer\source\repos\Authentication\Services\bin\Debug\net8.0\DTO.dll
+C:\Users\Acer\source\repos\Authentication\Services\bin\Debug\net8.0\DTO.pdb

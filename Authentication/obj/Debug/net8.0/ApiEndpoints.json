@@ -17,7 +17,7 @@
   },
   {
     "ContainingType": "Authentication.Controllers.AccountAPIController",
-    "Method": "Login",
+    "Method": "StartLogin",
     "RelativePath": "api/account/login",
     "HttpMethod": "POST",
     "IsController": true,
@@ -59,12 +59,134 @@
   },
   {
     "ContainingType": "Authentication.Controllers.AccountAPIController",
+    "Method": "VerifyTwoFactor",
+    "RelativePath": "api/account/verify-2fa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DTO.VerifyTwoFactorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authentication.Controllers.AccountAPIController",
+    "Method": "VerifyEmail",
+    "RelativePath": "api/account/verify-email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DTO.VerifyEmailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authentication.Controllers.InternalAccountAPIController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/internal/account/change-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DTO.ChangePasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authentication.Controllers.InternalAccountAPIController",
+    "Method": "StartLogin",
+    "RelativePath": "api/internal/account/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DTO.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authentication.Controllers.InternalAccountAPIController",
+    "Method": "Logout",
+    "RelativePath": "api/internal/account/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authentication.Controllers.InternalAccountAPIController",
+    "Method": "Register",
+    "RelativePath": "api/internal/account/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DTO.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authentication.Controllers.InternalAccountAPIController",
     "Method": "usr",
-    "RelativePath": "api/account/usr",
+    "RelativePath": "api/internal/account/usr",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authentication.Controllers.InternalAccountAPIController",
+    "Method": "VerifyTwoFactor",
+    "RelativePath": "api/internal/account/verify-2fa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DTO.VerifyTwoFactorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authentication.Controllers.InternalAccountAPIController",
+    "Method": "VerifyEmail",
+    "RelativePath": "api/internal/account/verify-email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DTO.VerifyEmailRequest",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

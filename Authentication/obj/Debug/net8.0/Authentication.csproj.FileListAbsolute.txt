@@ -84,13 +84,6 @@ C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\scoped
 C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\staticwebassets\msbuild.Authentication.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\staticwebassets\msbuild.Authentication.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\staticwebassets\msbuild.build.Authentication.props
-C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Authentication.props
-C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Authentication.props
-C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\Authenti.5C4D8D91.Up2Date
 C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\Authentication.dll
 C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\refint\Authentication.dll
@@ -217,3 +210,11 @@ C:\Users\Acer\source\repos\Authentication\Authentication\bin\Debug\net8.0\runtim
 C:\Users\Acer\source\repos\Authentication\Authentication\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\Acer\source\repos\Authentication\Authentication\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Acer\source\repos\Authentication\Authentication\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\Authentication.sourcelink.json
+C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Acer\source\repos\Authentication\Authentication\obj\Debug\net8.0\swae.build.ex.cache

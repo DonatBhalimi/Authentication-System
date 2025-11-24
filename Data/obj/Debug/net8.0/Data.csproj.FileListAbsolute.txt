@@ -15,3 +15,4 @@ C:\Users\Acer\source\repos\Authentication\Data\obj\Debug\net8.0\refint\Data.dll
 C:\Users\Acer\source\repos\Authentication\Data\obj\Debug\net8.0\Data.pdb
 C:\Users\Acer\source\repos\Authentication\Data\obj\Debug\net8.0\Data.genruntimeconfig.cache
 C:\Users\Acer\source\repos\Authentication\Data\obj\Debug\net8.0\ref\Data.dll
+C:\Users\Acer\source\repos\Authentication\Data\obj\Debug\net8.0\Data.sourcelink.json

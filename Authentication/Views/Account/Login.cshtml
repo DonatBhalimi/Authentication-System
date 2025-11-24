@@ -1,59 +1,118 @@
 ﻿@{
     ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2 class="mb-3">User Login</h2>
-<p class="text-muted">
-    Log in with your username or e-mail and password.
-</p>
 
-<div class="col-md-6">
-    <form id="loginForm" class="card card-body shadow-sm">
-        <div class="mb-3">
-            <label class="form-label">Username or E-mail</label>
-            <input type="text" class="form-control" id="userOrEmail" required>
+<div class="d-flex justify-content-center align-items-center mt-5">
+    <div class="card shadow-sm" style="min-width: 380px; max-width: 420px; width: 100%;">
+        <div class="card-header text-center">
+            <h3 class="mb-0">Sign in</h3>
         </div>
-        <div class="mb-3">
-            <label class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" required>
+
+        <div class="card-body" id="login-step1">
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="LoginUser" class="form-label">Username or Email</label>
+                    <input id="LoginUser" name="UsernameOREmail" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="LoginPassword" class="form-label">Password</label>
+                    <input id="LoginPassword" name="Password" type="password" class="form-control" required />
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input id="RememberMe" type="checkbox" class="form-check-input" />
+                    <label class="form-check-label" for="RememberMe">Remember me</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Next</button>
+            </form>
+
+            <div id="loginError" class="text-danger mt-3"></div>
         </div>
-        <div class="form-check mb-3">
-            <input class="form-check-input" type="checkbox" id="remember">
-            <label class="form-check-label" for="remember">
-                Remember my login information
-            </label>
+
+        <div class="card-body" id="login-step2" style="display:none;">
+            <p class="mb-3">Enter the 2FA code sent to your email.</p>
+
+            <form id="twoFaForm">
+                <input id="TwoFactorId" type="hidden" />
+                <div class="mb-3">
+                    <label for="TwoFaCode" class="form-label">Code</label>
+                    <input id="TwoFaCode" class="form-control" required />
+                </div>
+
+                <button type="submit" class="btn btn-success w-100">Verify and sign in</button>
+            </form>
+
+            <div id="twoFaError" class="text-danger mt-3"></div>
         </div>
-        <button class="btn btn-primary w-100" type="submit">Log In</button>
-        <div id="loginMessage" class="mt-3"></div>
-    </form>
+
+        <div class="card-footer text-center">
+            <span>Don't have an account?</span>
+            <a asp-controller="Account" asp-action="Register">Register</a>
+        </div>
+    </div>
 </div>
 
 @section Scripts {
     <script>
-        document.getElementById("loginForm").addEventListener("submit", async (e) => {
+        const lStep1 = document.getElementById("login-step1");
+        const lStep2 = document.getElementById("login-step2");
+        const loginForm = document.getElementById("loginForm");
+        const twoFaForm = document.getElementById("twoFaForm");
+        const loginError = document.getElementById("loginError");
+        const twoFaError = document.getElementById("twoFaError");
+        const twoFactorIdInput = document.getElementById("TwoFactorId");
+        const rememberMeInput = document.getElementById("RememberMe");
+
+        loginForm.addEventListener("submit", async function (e) {
             e.preventDefault();
 
-            const body = {
-                usernameOREmail: document.getElementById("userOrEmail").value,
-                password: document.getElementById("password").value,
-                rememberCredentials: document.getElementById("remember").checked
+            const payload = {
+                usernameOREmail: document.getElementById("LoginUser").value,
+                password: document.getElementById("LoginPassword").value
             };
 
             const res = await fetch("/api/account/login", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                credentials: "include",
-                body: JSON.stringify(body)
+                body: JSON.stringify(payload)
             });
 
-            const msgEl = document.getElementById("loginMessage");
             if (res.ok) {
-                msgEl.className = "alert alert-success";
-                msgEl.textContent = "Login successful.";
-                setTimeout(() => window.location.href = "/Account/Profile", 800);
+                const data = await res.json();
+                twoFactorIdInput.value = data.twoFactorId;
+                loginError.textContent = "";
+                lStep1.style.display = "none";
+                lStep2.style.display = "block";
             } else {
-                const err = await res.text();
-                msgEl.className = "alert alert-danger";
-                msgEl.textContent = err || "Login failed";
+                const text = await res.text();
+                loginError.textContent = text || "Login failed.";
+            }
+        });
+
+        twoFaForm.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const payload = {
+                twoFactorId: twoFactorIdInput.value,
+                code: document.getElementById("TwoFaCode").value,
+                rememberMe: rememberMeInput.checked
+            };
+
+            const res = await fetch("/api/account/verify-2fa", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+            });
+
+            if (res.ok) {
+                twoFaError.textContent = "";
+                window.location.href = "/Account/Profile";
+            } else {
+                const text = await res.text();
+                twoFaError.textContent = text || "2FA verification failed.";
             }
         });
     </script>
